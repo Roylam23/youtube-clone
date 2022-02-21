@@ -1,0 +1,158 @@
+:root {
+    --main-color: #191b1c;
+    --grid-w: calc(100% - 16rem);
+}
+
+.grid-con {
+    width: var(--grid-w);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: calc(5px + 0.5vw);
+    padding: 30px calc(var(--grid-w) * 0.025);
+}
+
+.bg-grid{
+    margin-top:64px;
+}
+
+.in-img {
+    width: 100%;
+
+}
+
+.in-title {
+    width: 100%;
+    height: 125px;
+    margin-top: 15px;
+}
+
+.in-title-l {}
+
+.in-title-r {
+    font-size: 18px;
+    color: rgb(224, 224, 224);
+}
+
+.l-con {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.l-con span:hover {
+    background: #313131;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo::after {
+    content: 'HK';
+    position: absolute;
+    right: -20px;
+    top: -10px;
+    color: rgb(165, 165, 165);
+    font-size: 12px;
+}
+
+.option-name-s{
+    width: 100%;
+    text-align: center;
+    margin-top:5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 10px;
+}
+
+.l-con-s{
+    padding-top:5px;
+}
+
+#con-name {
+    color: #999999;
+    font-size: 16px;
+}
+
+.l-con {
+    overflow: hidden;
+}
+
+.l-con:hover {
+    overflow: auto;
+}
+
+.bg-main {
+    background: #191b1c;
+}
+
+.bg-grid {
+    background: #131313;
+}
+
+.l-option-con{
+    cursor:pointer;
+}
+
+.nav-sec{
+    border-top:1px solid #3d3d3d;
+    margin-top:15px;
+    width: 100%;
+    padding-top:10px;
+}
+
+.btn-nav{
+    cursor:pointer;
+}
+
+.grid-con-in{
+    margin-bottom: 50px;
+}
+
+.in-title{
+    height:auto;
+}
+
+.in-title-r{
+    font-size:calc(12px + 0.25vw)
+}
+.in-title-l img{
+    width: 3vw;
+    max-width: 45px;
+}
+#con-name {
+    font-size: calc(12px + 0.2vw)
+}
+
+.in-title{
+    margin-top:calc(10px + 0.15vw);
+}
+
+@media screen and (max-width:1440px) {
+    .grid-con {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .l-con:hover {
+        overflow:auto;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .grid-con {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .in-title-r{
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    #con-name{
+        font-size: 12px;
+    }
+    .grid-con-in{
+        margin-bottom: 30px;
+    }
+}
