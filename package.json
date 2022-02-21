@@ -1,5 +1,6 @@
 {
   "name": "youtube-clone",
+  "homepage": "https://roylam23.github.io/youtube-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^3.2.3",
     "gsap": "^3.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -16,6 +18,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
